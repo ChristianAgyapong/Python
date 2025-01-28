@@ -1,7 +1,6 @@
 # commission_employee.py
 
 class CommissionEmployee:
-    # Private fields
     def __init__(self, first_name, last_name, social_security_number, gross_sales, commission_rate):
         self.set_first_name(first_name)
         self.set_last_name(last_name)
