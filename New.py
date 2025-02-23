@@ -5,8 +5,7 @@ class CommissionEmployee:
         self._last_name = last_name
         self._social_security_number = social_security_number
         self._gross_sales = max(0.0, gross_sales)  # Ensuring gross_sales is non-negative
-        self._commission_rate = commission_rate if 0.0 <= commission_rate <= 1.0 else 0.0  # Validating commission_rate
-
+        self._commission_rate = commission_rate if 0.0 <= commission_rate <= 1.0 else 0.0 
     # Method to calculate earnings
     def earnings(self):
         return self._gross_sales * self._commission_rate
